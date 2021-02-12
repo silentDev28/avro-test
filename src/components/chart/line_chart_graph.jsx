@@ -27,7 +27,7 @@ function Graph() {
               backgroundColor: "#3B99FC",
               borderColor: "#3B99FC",
               fill: false,
-              label: "689 New applications",
+              label: "689 Project done",
               data: [
                 800,
                 800,
