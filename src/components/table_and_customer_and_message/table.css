@@ -200,3 +200,10 @@
   background: #110b56 !important;
   color: white;
 }
+.MuiTableRow-root:hover {
+  background: #eaeffd !important;
+  cursor: pointer !important;
+}
+.MuiPagination-ul li {
+  margin-bottom: 20px !important;
+}

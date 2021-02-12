@@ -33,10 +33,17 @@ const useStyles = makeStyles({
 export default function BasicTable() {
   const classes = useStyles();
   const [checked, setChecked] = React.useState(false);
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
+  const [id, setid] = React.useState({
+    id: "",
+    check: false,
+  });
+  const handleChange = (event, id) => {
+    setid({ id: id, check: event.target.checked });
   };
-
+  const handleChangeAll = (value) => {
+    setChecked(value);
+  };
+  console.log(id);
   const [tableContent, settableContent] = useState({
     records: [
       {
@@ -151,7 +158,7 @@ export default function BasicTable() {
               <Checkbox
                 color="default"
                 inputProps={{ "aria-label": "checkbox with default color" }}
-                onChange={handleChange}
+                onChange={(evt) => handleChangeAll(evt.target.checked)}
                 className="checkbox__icon"
               />
             </TableCell>
@@ -167,12 +174,23 @@ export default function BasicTable() {
           {tableContent.records.map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
-                <Checkbox
-                  color="default"
-                  inputProps={{ "aria-label": "checkbox with default color" }}
-                  onChange={handleChange}
-                  className="checkbox__icon"
-                />
+                {id.id === row.id ? (
+                  <Checkbox
+                    color="default"
+                    inputProps={{ "aria-label": "checkbox with default color" }}
+                    onChange={(evt) => handleChange(evt, row.id)}
+                    className="checkbox__icon"
+                    checked={checked ? checked : id.check}
+                  />
+                ) : (
+                  <Checkbox
+                    color="default"
+                    inputProps={{ "aria-label": "checkbox with default color" }}
+                    onChange={(evt) => handleChange(evt, row.id)}
+                    className="checkbox__icon"
+                    checked={checked}
+                  />
+                )}
               </TableCell>
               <TableCell align="left">
                 {" "}
