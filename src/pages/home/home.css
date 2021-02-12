@@ -1,0 +1,30 @@
+.home__page {
+  padding-top: 30px;
+  padding-left: 30px;
+
+  padding-right: 29px;
+  padding-bottom: 30px;
+}
+.header__overview {
+  color: #110b56;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.high__icon {
+  font-size: 10px !important;
+  color: #50b83c !important;
+  font-weight: bold;
+}
+.low__icon {
+  font-size: 10px !important;
+  color: #f52d56 !important;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .home__page {
+    padding-left: 30px;
+
+    padding-right: 29px;
+  }
+}

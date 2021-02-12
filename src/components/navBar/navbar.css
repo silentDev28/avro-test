@@ -1,0 +1,103 @@
+.nav__header {
+  padding-top: 30px;
+  padding-left: 30px;
+  position: relative;
+  width: 100%;
+}
+.search__icon__span {
+  padding: 13px;
+  border-top: 1px solid #e3eded !important;
+  border-bottom: 1px solid #e3eded !important ;
+  border-left: 1px solid #e3eded !important;
+  border-right: none;
+  border-top-left-radius: 2px !important;
+  border-bottom-left-radius: 2px !important ;
+  color: #637381;
+  font-size: 11px;
+}
+.input__field {
+  height: 40px;
+  border-top: 1px solid #e3eded !important;
+  border-bottom: 1px solid #e3eded !important ;
+  border-right: 1px solid #e3eded !important;
+  border-left: none;
+  border-top-right-radius: 2px !important;
+  border-bottom-right-radius: 2px !important ;
+  font-size: 15px;
+  font-weight: 400;
+}
+.input__field:focus {
+  border: none !important;
+}
+.notification__badge {
+  position: absolute;
+  left: 93% !important;
+  top: 50%;
+}
+.notification__icon {
+  position: relative;
+}
+.not__icon {
+  font-size: 17px !important;
+}
+.dot__red {
+  width: 8.33px;
+  height: 8.33px;
+  border-radius: 100%;
+  background: #f52d56;
+  position: absolute;
+  left: 43%;
+  top: -1%;
+  z-index: 100;
+  border: 1px solid white;
+}
+.avarter__span {
+  position: absolute;
+  left: 95% !important;
+  top: 33%;
+}
+.avarter__image__cover {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: silver;
+}
+@media (max-width: 1024px) {
+  .avarter__span {
+    left: 90% !important;
+  }
+  .notification__badge {
+    left: 86% !important;
+  }
+}
+@media (max-width: 770px) {
+  .avarter__span {
+    left: 90% !important;
+  }
+  .notification__badge {
+    left: 86% !important;
+  }
+}
+@media (max-width: 760px) {
+  .avarter__span {
+    left: 90% !important;
+  }
+  .notification__badge {
+    left: 86% !important;
+  }
+}
+@media (max-width: 500px) {
+  .avarter__span {
+    left: 90% !important;
+    top: 40%;
+  }
+  .notification__badge {
+    left: 84% !important;
+  }
+  .avarter__image__cover {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: silver;
+  }
+}

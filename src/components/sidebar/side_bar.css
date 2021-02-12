@@ -1,0 +1,41 @@
+.side__bar__cover {
+  background-color: #f4f5fa;
+  padding-top: 100px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+}
+.route__ul {
+  list-style: none;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.route__lists {
+  padding-left: 27px !important;
+  height: 40px;
+  width: 100% !important;
+  line-height: 40px;
+  cursor: pointer;
+}
+.route__a__tag {
+  color: #637381;
+  font-size: 15px;
+}
+.icon__span {
+  margin-right: 10px;
+  object-fit: contain;
+}
+.icon__image {
+  width: 20px;
+  height: 18.75px;
+}
+@media (max-width: 770px) {
+  .side__bar__cover {
+    display: none !important;
+  }
+}
+@media (max-width: 500px) {
+  .side__bar__cover {
+    display: none !important;
+  }
+}

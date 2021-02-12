@@ -1,0 +1,37 @@
+.card__cover {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  border-radius: 2px;
+  padding-left: 25px !important;
+}
+.card__name {
+  color: #110b56;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.card__number {
+  font-size: 20px;
+  font-weight: 700;
+  color: #110b56;
+  margin-bottom: 4px !important;
+}
+.card__percentage {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 6px !important;
+}
+.icon__span {
+  margin-right: 3px !important;
+}
+.card__time {
+  font-size: 12px;
+  font-weight: 400;
+  color: #919eab;
+}
+@media (max-width: 768px) {
+  .card__cover {
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+  }
+}

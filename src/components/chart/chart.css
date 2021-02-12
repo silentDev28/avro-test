@@ -1,0 +1,64 @@
+.chat__cover {
+  margin-top: 43px;
+}
+.chart__dropdown {
+  width: 112px;
+  height: 35px;
+  border: 1px solid #e3eded;
+  border-radius: 2px;
+  line-height: 35px;
+  color: #110b56;
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.key__down__icon {
+  color: #110b56;
+  margin-left: 20px;
+}
+.arrow__icon {
+  font-size: 7px !important;
+}
+.chart__side__header {
+  display: flex;
+  justify-content: flex-end;
+}
+.chart__header___content {
+  line-height: 35px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #110b56;
+  position: relative;
+  margin-right: 30px;
+}
+.new__app__dot {
+  background: #fa5f1c;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: -14%;
+}
+.new__app__dot2 {
+  background: #2979f2;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+  top: 40%;
+  left: -17%;
+}
+.chart__header___content2 {
+  line-height: 35px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #110b56;
+  position: relative;
+}
+.line__chart__cover {
+  margin-top: 52px;
+}
+.line__chart__data {
+  margin-bottom: 51px;
+}
