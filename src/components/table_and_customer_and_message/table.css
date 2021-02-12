@@ -163,8 +163,7 @@
   border-bottom: 1px solid #e3eded;
 }
 .checkbox__icon {
-  width: 15px !important;
-  height: 15px !important;
+  font-size: 15px !important;
 }
 .table__sort {
   float: right;
