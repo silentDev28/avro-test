@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+import Avater from "../../images/avater_image.png";
 export default function Navbar() {
   return (
     <div className="nav__header">
@@ -34,7 +35,9 @@ export default function Navbar() {
         </span>
       </span>
       <span className="avarter__span">
-        <div className="avarter__image__cover"></div>
+        <div className="avarter__image__cover">
+          <img src={Avater} alt="image_logo" className="avater__image" />
+        </div>
       </span>
     </div>
   );

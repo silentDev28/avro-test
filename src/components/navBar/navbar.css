@@ -18,6 +18,11 @@
 .input__cover__new {
   padding-left: 0px !important;
 }
+.avater__image {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 100% !important;
+}
 /* .input__field {
   height: 40px;
   border-top: 1px solid #e3eded !important;
