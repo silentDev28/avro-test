@@ -3,7 +3,7 @@ import circle1 from "../../images/circle1.png";
 import circle2 from "../../images/circle2.png";
 import circle3 from "../../images/circle3.png";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
-export default function TableHeader() {
+export default function TableHeader({ getStatus }) {
   const [tableNav, settableNav] = useState({
     navContent: [
       {
@@ -45,6 +45,38 @@ export default function TableHeader() {
       },
     ],
   });
+
+  const handleFilter = (status) => {
+    getStatus(status);
+    const getActiveRoute = tableNav.navContent.find(
+      (statusName) => statusName.name === status
+    );
+    console.log(getActiveRoute);
+    if (getActiveRoute) {
+      const getStyle = tableNav.navContent.map((checkStatus) =>
+        checkStatus.name === status
+          ? {
+              ...checkStatus,
+              borderBottom: "1px solid #2979F2",
+              background: "#EAEFFD",
+              borderTop: "1px solid #E3EDED",
+
+              borderRight: "1px solid #E3EDED",
+            }
+          : {
+              ...checkStatus,
+              borderBottom: "1px solid #E3EDED",
+              background: "",
+              borderTop: "1px solid #E3EDED",
+
+              borderRight: "1px solid #E3EDED",
+            }
+      );
+      settableNav({
+        navContent: getStyle,
+      });
+    }
+  };
   const gettableNav = tableNav.navContent.map((list) => (
     <li
       key={list.id}
@@ -60,6 +92,7 @@ export default function TableHeader() {
         borderRight: list.borderRight,
         background: list.background,
       }}
+      onClick={() => handleFilter(list.name)}
     >
       <a>
         {list.icon ? (

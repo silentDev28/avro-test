@@ -3,6 +3,8 @@
   padding-left: 30px;
   position: relative;
   width: 100%;
+  padding-bottom: 0px !important;
+  height: 70px !important;
 }
 .search__icon__span {
   padding: 11px;
@@ -17,6 +19,9 @@
 }
 .input__cover__new {
   padding-left: 0px !important;
+  padding-bottom: 0px !important;
+  height: 40px !important;
+  margin-bottom: 0px !important;
 }
 .avater__image {
   width: 100% !important;

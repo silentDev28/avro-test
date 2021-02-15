@@ -1,9 +1,10 @@
 .home__page {
   padding-top: 30px;
   padding-left: 30px;
-
+  background: #e5e5e5;
   padding-right: 29px;
   padding-bottom: 30px;
+  margin-top: 0px !important;
 }
 .header__overview {
   color: #110b56;

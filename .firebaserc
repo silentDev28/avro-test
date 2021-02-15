@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "abstest-7d0d5"
+    "default": "abstest-7d0d5",
+    "staging": "abstest-7d0d5"
   }
 }

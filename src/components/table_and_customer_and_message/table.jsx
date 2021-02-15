@@ -148,9 +148,27 @@ export default function BasicTable() {
       },
     ],
   });
+  const [getNewFilterState, setgetNewFilterState] = useState({
+    records: tableContent.records,
+  });
+  const getStatus = (status) => {
+    console.log(status);
+    const getStatusFilter = tableContent.records.filter(
+      (state) => state.status === status
+    );
+    if (status === "All") {
+      setgetNewFilterState({
+        records: tableContent.records,
+      });
+    } else {
+      setgetNewFilterState({
+        records: getStatusFilter,
+      });
+    }
+  };
   return (
     <TableContainer component={Paper}>
-      <TableHeader />
+      <TableHeader getStatus={getStatus} />
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -171,7 +189,7 @@ export default function BasicTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {tableContent.records.map((row) => (
+          {getNewFilterState.records.map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
                 {id.id === row.id ? (
